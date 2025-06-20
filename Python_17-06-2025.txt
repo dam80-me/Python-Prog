@@ -1,0 +1,297 @@
+1
+print("hello")
+print("Malinda")
+print("Python Programming")
+
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:_15\Python Prog\first.py'
+hello
+Malinda
+Python Programming
+==================================================================================
+
+2
+# Delcare a varible 'name' and assign a string value
+name="Alice"
+
+# Declare a variable 'age' and assign an integer value
+age=30
+
+# Declare a variable 'height' and assign afloat value (in meters)
+height=1.75
+
+# Print the value and data type of each variable
+print (f"Variable: name, Value: {name}, Data Type: {type(name)}")
+print (f"Variable: age, Value: {age}, Data Type: {type(age)} ")
+print (f"Variable: height, Value: {height}, Data Type: {type(height)}")
+
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '61773' '--' 'c:\Users\Student_15\Python Prog\second.py'
+Variable: name, Value: Alice, Data Type: <class 'str'>
+Variable: age, Value: 30, Data Type: <class 'int'>
+Variable: height, Value: 1.75, Data Type: <class 'float'>
+======================================================================================
+
+3
+# Create an integer variable num_int with a value of 10
+num_int =10
+
+# Convert num_int to a float and store it in num_float
+num_float = float(num_int)
+
+# Print the values and data types of num_float and num_str
+num_str =str(num_int)
+
+print (f"Original integer: {num_int}, Type: {type(num_int)}")
+print (f"Converted to float: {num_float}, Type: {type(num_float)} ")
+print (f"Converted to string: {num_str}, Type: {type(num_str)} ")
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60250' '--' 'c:\Users\Student_15\Python Prog\second.py' 
+Variable: name, Value: Alice, Data Type: <class 'str'>
+Variable: age, Value: 30, Data Type: <class 'int'>
+Variable: height, Value: 1.75, Data Type: <class 'float'>
+
+=====================================================================
+
+4
+# Create a string variable str_num1 with the value "25"
+str_num1 ="25"
+
+# Create a string variable str_num2 with the value "12.75"
+str_num2 ="12.75"
+
+# Convert str_num1 to an integer and store it in int_val
+int_val = int(str_num1)
+
+# Convert str_num2 to an integer and store it in float_val
+float_val = float(str_num2)
+
+# Print the values and data types of int_val and float_val
+print (f"Original string 1: {str_num1}, Type: {type(str_num1)}")
+print (f"Converted to integer: {int_val}, Type: {type(int_val)} ")
+print (f"Original string 2: {str_num2}, Type: {type(str_num2)}")
+print (f"Converted to float: {float_val}, Type: {type(float_val)} ")
+
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60301' '--' 'c:\Users\Student_15\Python Prog\Fourth.py' 
+Original string 1: 25, Type: <class 'str'>
+Converted to integer: 25, Type: <class 'int'>
+Original string 2: 12.75, Type: <class 'str'>
+Converted to float: 12.75, Type: <class 'float'>
+PS C:\Users\Student_15\Python Prog> 
+=======================================================================
+5
+favorite_number_str = input("Please enter your favorite number:")
+try:
+    # Try converting to an integer first
+    converted_number = int(favorite_number_str)
+    print(f"\nSuccessfully converted input to an integer: {converted_number}")
+    final_result_int = converted_number + 10
+    print(f"Result after adding 10 (integer): {final_result_int}, Type{type(final_result_int)}")
+
+except ValueError:
+    # If integer conversion fails, try converting to a float
+    try:
+        converted_number=float(favorite_number_str)
+        print(f"\nSuccessfully convereted input to a float:{converted_number}")
+        final_result_float = converted_number + 10
+        print(f"Result after adding 10 (float): {final_result_float}, Type{type(final_result_float)}")
+
+    except ValueError:
+# If neither integer not float conversion works
+        print(f"\nInvalid input:'{favorite_number_str}' cannot be converted to a number.")
+        print("Please enter a valid number value.")
+
+print("End of Demonstration")
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60532' '--' 'c:\Users\Student_15\Python Prog\Fifth.py' 
+Please enter your favorite number:3
+
+Successfully converted input to an integer: 3
+Result after adding 10 (integer): 13, Type<class 'int'>
+End of Demonstration
+=============================================================
+
+6
+first_number_str = input("Please enter the first number:")
+second_number_str = input("Please enter the second number:")
+result = print(first_number_str + second_number_str)
+"""try:
+    # Try converting to an integer first
+    converted_number = int(favorite_number_str)
+    print(f"\nSuccessfully converted input to an integer: {converted_number}")
+    final_result_int = converted_number + 10
+    print(f"Result after adding 10 (integer): {final_result_int}, Type{type(final_result_int)}")
+
+except ValueError:
+    # If integer conversion fails, try converting to a float
+    try:
+        converted_number=float(favorite_number_str)
+        print(f"\nSuccessfully convereted input to a float:{converted_number}")
+        final_result_float = converted_number + 10
+        print(f"Result after adding 10 (float): {final_result_float}, Type{type(final_result_float)}")
+
+    except ValueError:
+# If neither integer not float conversion works
+        print(f"\nInvalid input:'{favorite_number_str}' cannot be converted to a number.")
+        print("Please enter a valid number value.")
+
+print("End of Demonstration")"""
+
+===============================================
+
+7
+#Ask the user to enter an integer
+#Using a try-except block to handle potention ValueError if non-integer
+
+try:
+    number=int (input("Please enter an integer:"))
+
+    # Check if the number is positive, negative or zero
+    if number >0:
+        print(f"The number {number} is positive.")
+    elif number <0:
+        print(f"The number {number} is negative.")
+    else: #This condition will be true if number is 0
+        print(f"The number {number} is zero.")
+
+except ValueError:
+    print ("Invalid input. Please enter a valid whole number.")
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60762' '--' 'c:\Users\Student_15\Python Prog\seventh.py' 
+Please enter an integer:7
+The number 7 is positive.
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60770' '--' 'c:\Users\Student_15\Python Prog\seventh.py' 
+Please enter an integer:0
+The number 0 is zero.
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60777' '--' 'c:\Users\Student_15\Python Prog\seventh.py' 
+Please enter an integer:-9
+The number -9 is negative.
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '60784' '--' 'c:\Users\Student_15\Python Prog\seventh.py' 
+Please enter an integer:u
+Invalid input. Please enter a valid whole number.
+=====================================================
+8
+try:
+    marks=int (input("Please enter your marks:"))
+
+    if marks <0 or marks >100:
+        print ("Invalid Input")
+        marks=int (input("Please enter your marks:"))
+
+    if marks >=75:
+        print(f"Your grade {marks} is A.")
+    elif marks >=65:
+        print(f"Your grade {marks} is B.")
+    elif marks >=55:
+        print(f"Your grade {marks} is C.")
+    elif marks >=35:
+        print(f"Your grade {marks} is S.")
+    else: 
+        print(f"Your grade {marks} is W.")
+
+except ValueError:
+    print ("Invalid input. Please enter a valid whole number.")
+
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '56018' '--' 'c:\Users\Student_15\Python Prog\8th.py' 
+Please enter your marks:102
+Invalid Input
+Please enter your marks:95
+Your grade 95 is A.
+PS C:\Users\Student_15\Python Prog> 
+==========================================
+9
+total_sum =0
+
+
+for number in range (1, 101):
+    # Add the current number to the total_sum
+    total_sum += number # This is equivalent to total_sum =total sum + number
+
+print(f"The sum of numbers from 1 to 100 is: {total_sum}")
+
+o/p
+PS C:\Users\Student_15\Python Prog>  c:; cd 'c:\Users\Student_15\Python Prog'; & 'c:\Users\Student_15\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\Student_15\.vscode\extensions\ms-python.debugpy-2024.0.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '56071' '--' 'c:\Users\Student_15\Python Prog\9th.py' 
+The sum of numbers from 1 to 100 is: 5050
+
+=============================================
+10
+#Initialize a variable for the countdown starting from 10
+countdown_number =10
+
+# Use a while loop to continue as long as countdown_number is greater than 0
+while countdown_number >0:
+    # Print the current number in the countdown
+    print(countdown_number)
+    # Decrement the countdown_number by 1 in each iteratioon
+    countdown_number-=1 # This is equyivalent to countdown_number = countdown_number -1
+# After the loop finishes (when countdown_number becomes 0 or less),
+print("Lift off!")
+
+o/p
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Lift off!
+================================================
+11
+try:
+    for number in range (1,6):
+        number = int(input("Please enter your marks:"))
+        while number < 0 or number > 100:
+        
+                if number >=75:
+                    print(f"Your grade {marks} is A.")
+                elif number >=65:
+                    print(f"Your grade {marks} is B.")
+                elif number >=55:
+                    print(f"Your grade {marks} is C.")
+                elif number >=35:
+                    print(f"Your grade {marks} is S.")
+                else: 
+                    print(f"Your grade {marks} is W.")
+
+except ValueError:
+        print ("Invalid input. Please enter a valid whole number.")
+
+
+
+==========================================
+12
+def power(base, exponent=2):
+    result = base**exponent
+    return result
+
+# Call the function with only a base (exponent defaults to 2)
+result1 = power(5)
+
+print(f"5 raised to the power of 2 (default exponent) is:{result1}")
+
+# Call the function with both base and exponent
+result2 = power(2,4)
+print (f"2 raised to the power of 4 (default exponent) is:{result2}")
+
+result3 = power(10,3)
+print (f"10 raised to the power of 3 (default exponent) is:{result3}")
+
+5 raised to the power of 2 (default exponent) is:25
+2 raised to the power of 4 (default exponent) is:16
+10 raised to the power of 3 (default exponent) is:1000
+====================================================
+
+
