@@ -1,6 +1,9 @@
 class NegativeNumberError(ValueError):
     """Custom exception raised when a negative number is entered."""
-    pass
+    def returnerror(ValueError):
+        print(ValueError)
+    def fixError():
+        print("you can fix this error by adding correct number")
 
 def get_positive_number():
     """Asks the user for a number and raises a NegativeNumberError if i"""
@@ -8,9 +11,9 @@ def get_positive_number():
     while True:
         try:
             num_str = input("Please enter a positive number:")
-            number = float(num_str) #Use float to allow decimal number
+            number = int(num_str) #Use float to allow decimal number
 
-            if number <0:
+            if number <5:
                 raise NegativeNumberError("Number must be positive.")
             return number
         except ValueError:
