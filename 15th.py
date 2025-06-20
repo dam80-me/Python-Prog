@@ -9,18 +9,14 @@ try:
     for num_str in numbers_str:#234
         numbers.append(int(num_str.strip()))
 
-
 except ValueError:
     print("Error: Non-numeric input encountered. Please enter only")
 except IndexError as e:
     print(f"Error: {e}")
 
-
-
 else:
     total_sum = sum (numbers)
     print (f"The sum of the numbers is: {total_sum}")
-
 
 finally:
     print("Operation completed.")
