@@ -14,3 +14,5 @@ print (f"2 raised to the power of 4 (default exponent) is:{result2}")
 result3 = power(10,3)
 print (f"10 raised to the power of 3 (default exponent) is:{result3}")
 
+print (f"\nEnd of demo")
+
