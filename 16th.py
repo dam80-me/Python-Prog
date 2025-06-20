@@ -19,13 +19,13 @@ def get_positive_number():
         except NegativeNumberError as e:
             print(f"Error: {e}")
 
-            if __name__=="__main__":
-                try:    
-                    positive_num = get_positive_number()
-                    print(f"You entered a positive number: {positive_num}")
-                except NegativeNumberError as e:
-                    print(f"Caught an error in the main script: {e}")
-                except Exception as e:
-                    print(f"An unexpected error occured:{e}")
+if __name__=="__main__":
+    try:    
+        positive_num = get_positive_number()
+        print(f"You entered a positive number: {positive_num}")
+    except NegativeNumberError as e:
+        print(f"Caught an error in the main script: {e}")
+    except Exception as e:
+        print(f"An unexpected error occured:{e}")
 
     
