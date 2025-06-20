@@ -294,4 +294,27 @@ print (f"10 raised to the power of 3 (default exponent) is:{result3}")
 10 raised to the power of 3 (default exponent) is:1000
 ====================================================
 
+PS C:\Users\Student_15\Python Prog> git init
+Initialized empty Git repository in C:/Users/Student_15/Python Prog/.git/
+PS C:\Users\Student_15\Python Prog> git add .
+PS C:\Users\Student_15\Python Prog> git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Student_15@DESKTOP-NOL734H.(none)')
+PS C:\Users\Student_15\Python Prog> git config --global user.email "malinda_madurawela@yahoo.com"
+PS C:\Users\Student_15\Python Prog> git config --global user.name "dam80-me"                     
+PS C:\Users\Student_15\Python Prog> 
+
+
+
 
